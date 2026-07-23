@@ -21,7 +21,8 @@ a:hover
 
 html
 {
-    background-color: #181a1b;
+    background-color: #181821;
+    background: linear-gradient(90deg,rgba(24, 24, 33, 1) 0%, #23222E 50%, rgba(24, 24, 33, 1) 100%);
 }
 
 body
@@ -31,7 +32,7 @@ body
     font-size:14pt;
     line-height: 1.4;
     word-spacing:normal;
-    background-color: #1b1f1f;
+    background-color: #18151e;
     margin: auto;
     padding: 2rem;
     max-width:600px;
