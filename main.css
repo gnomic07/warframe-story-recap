@@ -1,4 +1,4 @@
-h1
+h1, h2
 {
     line-height: 1;
     color:#cbba86;
@@ -79,7 +79,7 @@ hr
     display: block;
     height: 1px;
     border: 0;
-    border-top: 1px solid #bebebe;
+    border-top: 1px solid #cbba86;
     margin: 1em 0;
-    padding: 0;
+    margin-inline: 20%;
 }
