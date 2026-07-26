@@ -29,13 +29,25 @@ body
 {   
     font-family:sans-serif, Arial;  
     color: #efefef;
-    font-size:14pt;
+    margin: 0;
+}
+
+main
+{
+    font-size: large;
     line-height: 1.4;
-    word-spacing:normal;
     background-color: #18151e;
-    margin: auto;
     padding: 2rem;
-    max-width:600px;
+    margin: auto;
+}
+
+
+@media only screen and (min-width: 768px)
+{
+    main
+    {
+        max-width: 600px;
+    }
 }
 
 img
@@ -46,32 +58,25 @@ img
     height: auto;
     max-width: 100%;
     max-height: 90%;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.5rem;
+    margin-inline: auto;
 }
 
 figure
 {
     margin: 0;
     text-align: center;
-    font-size: 12pt;
+    font-size: medium;
     height: 100%;
     color:#bebebe;
 }
 
 blockquote
 {
-  margin: 1em 0;
-  padding: 0 1em;
+  margin: 1rem 0;
+  padding: 0 1rem;
   border-left: 4px solid #cbba86;
   color:#bebebe;
-}
-
-aside
-{
-  width: 40%;
-  padding-left: 1rem;
-  float: right;
-  font-style: italic;
 }
 
 hr
@@ -82,4 +87,38 @@ hr
     border-top: 1px solid #cbba86;
     margin: 1em 0;
     margin-inline: 20%;
+}
+
+nav hr
+{
+    margin-inline: 0;
+}
+
+nav
+{
+    display: none;
+}
+
+@media (min-width: 1120px)
+{
+    nav
+    {
+        left: calc(50% - 520px);
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        width: auto;
+        position: fixed;
+        text-align: right;
+    }
+}
+
+nav a
+{
+    font-size: large;
+    font-family: sans-serif;
+    display: block;
+    line-height: 1.4;
+    text-decoration: none;
 }
