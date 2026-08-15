@@ -4,13 +4,17 @@
     --color-silver: #bebebe;
     --color-sand: #cebb90;
     --color-shadow: #14121d;
-    --color-ink-light: #1a1824;
+    --color-ink-light: #1e1b29;
     --color-ink-dark: #171320;
     --color-link: #3ebbfe;
-    --color-link-hover: #7ad4fe;
 }
 
-h1, h2
+html
+{
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3
 {
     line-height: 1;
     color: var(--color-sand);
@@ -24,11 +28,12 @@ small
 a
 {
     color: var(--color-link);
+    text-decoration: none;
 }
 
-a:hover
+a:hover, b
 {
-    color: var(--color-link-hover);
+    color: var(--color-sand);
 }
 
 body
@@ -84,12 +89,12 @@ hr
 
 nav hr
 {
-    margin: 0.5rem 0;
+    margin: 0.5rem 0.5rem;
 }
 
 aside
 {
-    background-image: linear-gradient(to left,  var(--color-ink-light), var(--color-ink-dark) max(160px, 100%));
+    background-image: linear-gradient(to left,  var(--color-ink-light), var(--color-ink-dark) max(180px, 100%));
     display:flex;
     flex: 1;
     position: sticky;
@@ -99,7 +104,7 @@ aside
 
 aside.right
 {
-    background-image: linear-gradient(to right, var(--color-ink-light),  var(--color-ink-dark) max(160px, 100%));
+    background-image: linear-gradient(to right, var(--color-ink-light),  var(--color-ink-dark) max(180px, 100%));
 }
 
 nav
@@ -107,13 +112,13 @@ nav
     display: none;
 }
 
-@media (min-width: calc(600px + 4rem + 160px + 2rem))
+@media (min-width: calc(600px + 4rem + 180px + 2rem))
 {
     nav
     {
         display:flex;
         flex-direction: column;
-        width: 160px;
+        width: 180px;
         align-self: center;
         text-align: right;
         margin-left: auto;
@@ -127,4 +132,14 @@ nav a
     font-family: sans-serif;
     line-height: 1.4;
     text-decoration: none;
+}
+
+nav a, nav h2
+{
+    padding: 0 0.5rem;
+}
+
+nav a:hover
+{
+    background: linear-gradient(to right, #0000, color-mix(in hsl, #0000 90%, var(--color-sand) 10%) 99%, var(--color-sand) 1px);
 }
