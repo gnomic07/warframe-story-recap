@@ -10,7 +10,6 @@ const callback = (entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             activeSection = entry.target.id;
-            history.pushState({}, "", "#" + activeSection);
             navList.forEach(a => {
                 a.classList.remove("active");
                 if (a.getAttribute("href").slice(1) == activeSection) {
