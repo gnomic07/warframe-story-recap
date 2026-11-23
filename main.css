@@ -3,6 +3,7 @@
     --color-platinum: #ededed;
     --color-silver: #bebebe;
     --color-sand: #cebb90;
+    --color-sand-light: #fff0ce;
     --color-shadow: #14121d;
     --color-ink-light: #1e1b29;
     --color-ink-dark: #171320;
@@ -41,9 +42,110 @@ a:hover, b
     color: var(--color-sand);
 }
 
+button
+{
+    display: block;
+    position: relative;
+    margin: auto;
+    padding: 4px 16px;
+
+    cursor: pointer;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: large;
+    font-weight: bolder;
+    color: var(--color-sand);
+    background-color: var(--color-ink-light);
+    
+    border: 1px solid var(--color-ink-light);
+    border-bottom: 4px solid;
+    border-bottom-color: var(--color-sand);
+
+    transition: all;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    opacity: 1;
+    z-index: 2;
+}
+
+button:hover
+{
+    color: var(--color-sand-light);
+    border-color: #998f78;
+    border-bottom-color: var(--color-sand-light);
+    transition: all;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+button:active
+{
+    color: var(--color-sand);
+    background-color: var(--color-ink-light);
+}
+
+button::before
+{
+    opacity: 0;
+    position: absolute;
+    content: "";
+    inset: 0;
+    background-image: radial-gradient(ellipse at bottom, var(--color-sand-light) -200%, var(--color-ink-light) 75%);
+    transition: opacity 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    z-index: -1;
+}
+
+button:hover::before
+{
+    opacity: 1;
+}
+
+
+iframe
+{
+    width:100%;
+    height: 100%;
+    aspect-ratio: 16 / 9;
+    resize: both;
+    overflow: auto;
+}
+
+.embed-container
+{
+    position: relative; 
+    padding-bottom: 56.25%; 
+    height: 0; 
+    overflow: hidden; 
+    max-width: 100%; 
+} 
+
+.embed-container iframe, .embed-container object, .embed-container embed
+{
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%;
+}
+
+dialog
+{
+    width: 100%;
+    
+    max-width: 1080px;
+    background-color: var(--color-shadow);
+    border: 1px solid var(--color-sand);
+    padding: 0;
+}
+
+dialog button
+{
+    float: right;
+    margin: 8px;
+}
+
 body
 {   
-    font-family:sans-serif, Arial;  
+    font-family: sans-serif;  
     display:flex;
     color: var(--color-platinum);
     margin: 0;

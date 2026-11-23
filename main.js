@@ -23,3 +23,10 @@ const callback = (entries) => {
 const observer = new IntersectionObserver(callback, options)
 
 sections.forEach(section => observer.observe(section));
+
+function stopVideo()
+{
+    document.querySelectorAll("iframe").forEach(iframe => {
+        iframe.src = iframe.src
+    })
+}

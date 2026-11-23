@@ -4,8 +4,12 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="referrer" content="strict-origin-when-cross-origin">
         <title>Warframe Story Recap</title>
         <link rel="stylesheet" href="main.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     </head>
 
     <body>
@@ -128,14 +132,31 @@
 
             <section id="The Second Dream">    
                 <h2>The Second Dream</h2>
-
+                    <button command="show-modal" commandfor="Cinematic-SecondDream">
+                        VIEW CINEMATIC
+                    </button>
+                    <dialog id="Cinematic-SecondDream">
+                        <div class="embed-container">
+                            <iframe
+                                loading="lazy"
+                                src="https://www.youtube.com/embed/SRX3_ouVMZI"
+                                title="The Second Dream"
+                                frameborder="0"
+                                allow="encrypted-media; picture-in-picture"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <button onclick="stopVideo()" command="close" commandfor="Cinematic-SecondDream">
+                            CLOSE
+                        </button>
+                    </dialog>
+                    
                 <blockquote>
-                    <a href="https://www.youtube.com/watch?v=0zkOeVvpGos">Cinematic: The Second Dream Intro (1:22)</a>
                     <p>
                         The Sentient, who we now know as <b>Hunhow</b>, has broken free, despite our attempts to contain him. Hunhow enlists <b>the Stalker</b> to finish what the Lotus could not. He bestows upon him a sword, through which Hunhow speaks, and reveals to him that he knows the true source of the Tenno's power: the <b>Reservoir</b>, hidden in a place Sentients cannot reach.
                     </p> 
                 </blockquote>
-
                 <figure>
                     <img
                     src="./images/TheSecondDream.png"
@@ -148,21 +169,35 @@
                     The Lotus reluctantly accepts the help of Corpus board member <b>Alad V</b>, who helps us track the Stalker into the Void. There we find the location of the Reservoir: <b>Lua</b>, Earth's Moon, apparently hidden away in the Void by the Lotus. To prevent the Stalker from <q>collapsing</q> the Void and crushing the Moon with it, we phase the Moon back into normal space. We hear the disembodied (ghostly?) voices of <b>Margulis</b> and <b>Ballas</b>, who seem to be romantically involved and arguing about the Tenno. Ballas wants them to be destroyed, but Margulis pleads with him to spare them, that she could <q>heal</q> them if she was given more time. Ballas says he cannot protect her, and that she must renounce before <b>the Seven</b>.
                 </p>
                 <p>
-                    With the moon out of the Void, Hunhow sends his Sentient fighters to attack the Reservoir directly. As we rush to defend it, we hear the voice of Margulis once again. At her trial, she condemns the Orokin, and is sentenced to death. Reaching the heart of the Reservoir, we find out the truth: the Operator is a human child, controlling the Warframes remotely. The Stalker, seeing our true form, hesitates and leaves. We fight off the Sentients and return to our ship, where the Stalker appears again - this time defeating us and stabbing our Warframe with Hunhow's sword. As the Stalker puts the Operator in a stranglehold, their Warframe briefly comes to life, tearing the sword in two and subduing the Stalker. The Lotus carries the unconscious Operator into the <b>Somatic Link</b>, where we awaken and regain some of our memories.
+                    With the moon out of the Void, Hunhow sends his Sentient fighters to attack the Reservoir directly. As we rush to defend it, we hear the voice of Margulis once again. At her trial, she condemns the Orokin, and is sentenced to death. Reaching the heart of the Reservoir, we find out the truth: the Operator is a human child, controlling the Warframes remotely. The Stalker, seeing our true form, hesitates and leaves. We fight off the Sentients and return to our ship, where the Stalker appears again &ndash; this time defeating us and stabbing our Warframe with Hunhow's sword. As the Stalker puts the Operator in a stranglehold, their Warframe briefly comes to life, tearing the sword in two and subduing the Stalker. The Lotus carries the unconscious Operator into the <b>Somatic Link</b>, where we awaken and regain some of our memories.
                 </p>
                 <p>
-                    We learn that the Tenno were originally passengers on the <b>Zariman 10-0</b>, a ship which was bound for <b>Tau</b>. The ship was lost to the Void in an accident, and recovered only years later - the sole survivors were the children, now imbued with Void powers which they struggled to control. Fearing these powers, The Orokin sought to destroy the Tenno, but were convinced to spare them by Margulis. Using her research, they created <b>Transference</b>, allowing the Tenno to channel their power through the Warframes.
+                    We learn that the Tenno were originally passengers on the <b>Zariman 10-0</b>, a ship which was bound for <b>Tau</b>. The ship was lost to the Void in an accident, and recovered only years later &ndash; the sole survivors were the children, now imbued with Void powers which they struggled to control. Fearing these powers, The Orokin sought to destroy the Tenno, but were convinced to spare them by Margulis. Using her research, they created <b>Transference</b>, allowing the Tenno to channel their power through the Warframes.
                 </p>
                 <hr aria-hidden="true"/>
             </section>
 
             <section id="The War Within">
                 <h2>The War Within</h2>
-
-                <blockquote>
-                    <a href="https://www.youtube.com/watch?v=zU9QY8BO7VY">Cinematic: The War Within Intro (0:32)</a>
-                </blockquote>
-
+                    <button command="show-modal" commandfor="Cinematic-TheWarWithin">
+                        VIEW CINEMATIC
+                    </button>
+                    <dialog id="Cinematic-TheWarWithin">
+                        <div class="embed-container">
+                            <iframe
+                                loading="lazy"
+                                src="https://www.youtube.com/embed/lqhk09oBUEo" 
+                                title="The War Within" 
+                                frameborder="0"
+                                allow="encrypted-media; picture-in-picture" 
+                                referrerpolicy="strict-origin-when-cross-origin" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <button onclick="stopVideo()" command="close" commandfor="Cinematic-TheWarWithin">
+                            CLOSE
+                        </button>
+                    </dialog>
                 <p>
                     The Lotus sends us to investigate an anomaly on the Moon, where we find Teshin. Despite him warning us not to interfere, we track him to an asteroid field and discover the hidden fortress of the <b>Grineer Queens</b>. Infiltrating the fortress, we find the Queens in their throne room; the elder Queen is coughing and withering. Teshin appears, seemingly working with the Queens, and subdues us. The elder Queen then produces a <b>Kuva Scepter</b>, with which she penetrates into our mind, and we lose our Warframe connection. We wake on the ship, only to find that our Void powers are gone.
                 </p>
@@ -176,7 +211,7 @@
                 </figure>
 
                 <p>
-                    With our powers gone, Ordis's programming compels him to purge the ship, and we escape in the landing craft, leaving us on a snowy mountain. On the mountain, we once again meet Teshin, who forces us through a series of trials to regain both our powers and our suppressed memories from the Zariman accident. We learn that the adults on the ship were driven mad by the Void, and that the children were forced to kill them. Teshin explains that he cannot defy the Queens, as all Dax soldiers are oath-bound to obey their Orokin masters and the wielders of the Kuva Scepter. He also reveals the elder Queen's true motive - not to kill the Operator, but to take over their body using the Kuva within the scepter, a process called <b>Continuity</b> which allowed the Orokin to effectively become immortal.
+                    With our powers gone, Ordis's programming compels him to purge the ship, and we escape in the landing craft, leaving us on a snowy mountain. On the mountain, we once again meet Teshin, who forces us through a series of trials to regain both our powers and our suppressed memories from the Zariman accident. We learn that the adults on the ship were driven mad by the Void, and that the children were forced to kill them. Teshin explains that he cannot defy the Queens, as all Dax soldiers are oath-bound to obey their Orokin masters and the wielders of the Kuva Scepter. He also reveals the elder Queen's true motive &ndash; not to kill the Operator, but to take over their body using the Kuva within the scepter, a process called <b>Continuity</b> which allowed the Orokin to effectively become immortal.
                 </p>
                 <p>
                     After regaining our powers, we are able to resist the scepter, and awaken on our ship once more, revealing the events of the mountain to be a dream state in which Teshin put us. Returning to the fortress, we fight the elder Queen in our Operator form and steal her scepter, freeing Teshin from his oath and allowing him to kill her.
@@ -189,35 +224,45 @@
 
             <section id="Chains of Harrow">
                 <h2>Chains of Harrow</h2>
-
-                <blockquote>
-                    <a href="https://www.youtube.com/watch?v=fjesl0zaMY4">Gameplay: Chains of Harrow Intro (1:16)</a>
-                    <p>
-                        We receive a strange, <q>haunted</q> recording from the <b>Red Veil</b>, in which we hear the paranoid whispering of a boy named <b>Rell</b>.
-                    </p>
-                </blockquote>
-
                 <p>
-                    Tracking the origin of the message to a ship, we find its crew murdered, and ominous messages on the walls, written in blood. We find and rescue <b>Palladino</b>, Speaker of the Red Veil, who explains that Rell is sacred to the Red Veil, and that her people were driven mad after he left their temple. Claiming that Rell was a Tenno who was cast out by Margulis, she attempts a seance to contact him, but is unsuccessful. The Lotus is skeptical, but agrees to help.
+                    In a strange, <q>haunted</q> recording from the <b>Red Veil</b>, a boy named <b>Rell</b> whispers a paranoid warning. Tracking the origin of the message to a ship, we find its crew murdered, and ominous messages on the walls, written in blood. We find and rescue <b>Palladino</b>, Speaker of the Red Veil, who explains that Rell is sacred to the Red Veil, and that her people were driven mad after he left their temple. Claiming that Rell was a Tenno who was cast out by Margulis, she attempts a seance to contact him, but is unsuccessful. The Lotus is skeptical, but agrees to help.
                 </p>
                 <p>
-                    To complete the seance, we seek out manifestations of Rell's Transference energy, and hear his voice warning us of <q><b>the Man in the Wall</b></q>. Palladino claims that this <q>Man in the Wall</q> is an ancient entity within the Void, one which Rell protected the world against, but the Lotus suggests he is simply experiencing delusions as a result of Void exposure. The Lotus asks if Rell was preserved in cryosleep like the other Tenno, but Palladino explains that they did not have that option. Instead, Rell bound his soul to his Warframe, chaining it beneath the Red Veil's temple.
+                    To complete the seance, we seek out manifestations of Rell's Transference energy. His voice warns us of <q><b>the Man in the Wall</b></q>, who Palladino claims is an ancient entity within the Void, and that Rell gave his life to protect the world against it. The Lotus suggests he is simply experiencing delusions as a result of Void exposure. She asks if Rell was preserved in cryosleep like the other Tenno, but Palladino explains that they did not have that option. Instead, Rell bound his soul to his Warframe, chaining it beneath the Red Veil's temple.
                 </p>
                 <p>
-                    We go to the temple to return Rell's manifestations and bring him to rest. After breaking the chains that bind his Warframe, Rell's spirit, now calm, asks who will guard against the Man in the Wall. Palladino responds that we - all of the Tenno - will have to, and his spirit fades away. Back on our ship, a mysterious doppelganger greets us: <q>Hey, kiddo.</q>
+                    We go to the temple to return Rell's manifestations and bring him to rest. After breaking the chains that bind his Warframe, Rell's spirit, now calm, asks who will guard against the Man in the Wall. Palladino responds that we &ndash; all of the Tenno &ndash; will have to, and his spirit fades away. Back on our ship, a mysterious doppelganger greets us: <q>Hey, kiddo.</q>
                 </p>
                 <hr aria-hidden="true"/>
             </section>
 
             <section id="Apostasy Prologue">
                 <h2>Apostasy Prologue</h2>
-
                 <p>
                     In the personal quarters of our ship, a gleaming light transports us to the Moon. As we trace our way back towards the Reservoir, we hear the voices of Ballas and Margulis once again. Margulis urges him to release her from imprisonment, but Ballas says he can do nothing, and begs for her forgiveness. Later, Ballas joins the rest of the Seven in sentencing her to death.
                 </p>
 
+                <button command="show-modal" commandfor="Cutscene-ApostasyPrologue">
+                    VIEW CUTSCENE
+                </button>
+                <dialog id="Cutscene-ApostasyPrologue">
+                    <div class="embed-container">
+                        <iframe
+                            loading="lazy"
+                            src="https://www.youtube.com/embed/Y425GntDioQ"
+                            title="Apostasy Prologue"
+                            frameborder="0"
+                            allow="encrypted-media; picture-in-picture"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <button onclick="stopVideo()" command="close" commandfor="Cutscene-ApostasyPrologue">
+                        CLOSE
+                    </button>
+                </dialog>
+
                 <blockquote>
-                    <a href="https://www.youtube.com/watch?v=7pMTNNuu-cQ">Cutscene: Apostasy Prologue (2:14)</a>
                     <p>
                         Continuing through the Reservoir, we reach the Lotus's chamber. Ballas appears, asking her forgiveness. The Lotus says she is not who he thinks she is, but Ballas replies by saying she is imprisoned, just like Margulis was. With a gesture, he severs the cords on her helmet, which leaves the Lotus seeming confused. Extending his hand, he promises not to abandon her again, and calls her Margulis. The two walk off into a portal.
                     </p>
@@ -225,23 +270,40 @@
 
                 <figure>
                     <img
-                    src="./images/Ballas.png"
-                    alt="Ballas, a blue-skinned humanoid with golden, glowing eyes, enters the Lotus's chamber. He wears a toga with golden ornaments, and gold pins in his hair."
+                    src="./images/Apostasy.png"
+                    alt="Ballas, a blue-skinned humanoid with golden, glowing eyes, extends his hand to the Lotus. He wears a toga with golden ornaments, and gold pins in his hair."
                     />
-                    <figcaption>Ballas as he appears during the quest.</figcaption>
+                    <figcaption>Ballas extends his hand to the Lotus.</figcaption>
                 </figure>
                 <hr aria-hidden="true"/>
             </section>
 
             <section id="The Sacrifice">
                 <h2>The Sacrifice</h2>
+                
+                <button command="show-modal" commandfor="Cinematic-TheSacrifice">
+                    VIEW CINEMATIC
+                </button>
+                <dialog id="Cinematic-TheSacrifice">
+                    <div class="embed-container">
+                        <iframe
+                            loading="lazy"
+                            src="https://www.youtube.com/embed/uNLtY8mdCgQ"
+                            title="The Sacrifice"
+                            frameborder="0"
+                            allow="encrypted-media; picture-in-picture"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <button onclick="stopVideo()" commandfor="Cinematic-TheSacrifice" command="close">
+                        CLOSE
+                    </button>
+                </dialog>
 
                 <blockquote>
                     <p>
-                        <a href="https://www.youtube.com/watch?v=BMOkrGNDv3o">Cinematic: The Sacrifice Intro (1:13)</a>
-                    </p>
-                    <p>
-                        The Operator receives a vision of Earth, and a Warframe emitting a tortured howl. In the vision, Ballas appears, accompanied by a group of Sentient fighters. He taunts the Warframe - which he calls <b>Umbra</b> - before one of the Sentients annihilates it.
+                        The Operator receives a vision of Earth, and a Warframe emitting a tortured howl. In the vision, Ballas appears, accompanied by a group of Sentient fighters. He taunts the Warframe &ndash; which he calls <b>Umbra</b> &ndash; before one of the Sentients annihilates it.
                     </p>
                 </blockquote>
 
@@ -254,10 +316,10 @@
                 </figure>
 
                 <p>
-                    The Operator goes to the site of Umbra's destruction and recovers its scattered pieces. In order to rebuild it, however, more data is required, which sends the Operator off to Lua. They recover a <b>Vitruvian</b> - an Orokin recording device - which belonged to Ballas, and it is revealed that Ballas is the creator of the Warframes. Returning to the ship, the Operator rebuilds Umbra, but as they attempt Transference, they are ejected and pinned against a wall by the rogue Warframe. The Operator attempts Transference once again, and is able to enter one of Umbra's memories. Through the memory, we learn that Umbra was once a Dax soldier, who was turned into a Warframe by Ballas as punishment for spying on him.
+                    The Operator goes to the site of Umbra's destruction and recovers its scattered pieces. In order to rebuild it, however, more data is required, which sends the Operator off to Lua. They recover a <b>Vitruvian</b> &ndash; an Orokin recording device &ndash; which belonged to Ballas, and it is revealed that Ballas is the creator of the Warframes. Returning to the ship, the Operator rebuilds Umbra, but as they attempt Transference, they are ejected and pinned against a wall by the rogue Warframe. The Operator attempts Transference once again, and is able to enter one of Umbra's memories. Through the memory, we learn that Umbra was once a Dax soldier, who was turned into a Warframe by Ballas as punishment for spying on him.
                 </p>
                 <p>
-                    Umbra escapes, and we chase him through the solar system, recovering pieces of his memory bit by bit. In the Vitruvian, Ballas reveals that the Warframes were created by injecting human beings with the <b>Helminth</b> - a carefully cultivated strain of the Infestation. He also describes the beginning of the Old War: the Sentients, created by the Orokin to terraform the distant star system of Tau, turned on their masters when they realized that they would bring ruin to it in the same way they had to Earth. Ballas explains his intent to defect to the Sentient side; the recordings in the Vitruvian were meant to pass the secrets of the Warframes and the Tenno to Hunhow - among them, the location of the Reservoir.
+                    Umbra escapes, and we chase him through the solar system, recovering pieces of his memory bit by bit. In the Vitruvian, Ballas reveals that the Warframes were created by injecting human beings with the <b>Helminth</b> &ndash; a carefully cultivated strain of the Infestation. He also describes the beginning of the Old War: the Sentients, created by the Orokin to terraform the distant star system of Tau, turned on their masters when they realized that they would bring ruin to it, just as they had done to Earth. Ballas explains his intent to defect to the Sentient side; the recordings in the Vitruvian were meant to pass the secrets of the Warframes and the Tenno to Hunhow &ndash; among them, the location of the Reservoir.
                 </p>
                 <p>
                     In the final memory, Ballas commands the now-infested Umbra to kill his son, Isaah. The Operator reassures him that he is not to blame, and that they will face this memory together. With Umbra at peace, the Operator successfully links minds with him. They return to Earth to find Ballas, and together, are able to resist his commands and stab him. As he lies dying, the Lotus crashes down from the sky in a new, more Sentient-looking form. The Operator is shocked at her new appearance, but she says that this is what she truly is. She flies off with Ballas's body.
@@ -282,12 +344,27 @@
                     Through a vision, we once again find ourselves on Lua. Our doppelganger taunts us, wearing the Lotus's helmet and forcing us to fight shadowy mockeries of her as we return to her chamber. 
                 </p>
 
+                <button command="show-modal" commandfor="Cutscene-ChimeraPrologue">
+                    VIEW CUTSCENE
+                </button>
+                <dialog id="Cutscene-ChimeraPrologue">
+                    <iframe
+                        loading="lazy"
+                        src="https://www.youtube.com/embed/4__gB4P9l6M"
+                        title="Chimera Prologue"
+                        frameborder="0"
+                        allow="encrypted-media; picture-in-picture"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen>
+                    </iframe>
+                    <button onclick="stopVideo()" commandfor="Cutscene-ChimeraPrologue" command="close">
+                        CLOSE
+                    </button>
+                </dialog>
+
                 <blockquote>
                     <p>
-                        <a href="https://youtu.be/rj9NB0KZZ2M?t=158">Gameplay: Chimera Prologue (5:02)</a>
-                    </p>
-                    <p>
-                        At the end of the chamber, a portal transports us to a Sentient lair where we find Ballas, who has been transformed into a chimerical blend between Orokin and Sentient. He curses the Lotus for deceiving him, calling her identity as a <q>mother</q> and <q>lover</q> a lie - only the Sentient Natah is real. Constructing a blade called the <b>Paracesis</b>, the Sentient Slayer, he tells the Operator there is only one way to end the war, and offers them the weapon.
+                        At the end of the chamber, a portal transports us to a Sentient lair where we find Ballas, who has been transformed into a chimerical blend between Orokin and Sentient. He laments his new form and curses the Lotus for deceiving him, calling her identity as a <q>mother</q> and <q>lover</q> a lie &ndash; only the Sentient Natah is real. Constructing a blade called the <b>Paracesis</b>, the Sentient Slayer, he tells the Operator there is only one way to end the war, and offers them the weapon.
                     </p>
                 </blockquote>
 
@@ -304,10 +381,27 @@
             <section id="Erra">
                 <h2>Erra</h2>
 
+                <button command="show-modal" commandfor="Cinematic-Erra">
+                    VIEW CINEMATIC
+                </button>
+                <dialog id="Cinematic-Erra">
+                    <iframe
+                        loading="lazy"
+                        src="https://www.youtube.com/embed/4bOAxhT4xMo"
+                        title="Erra"
+                        frameborder="0"
+                        allow="encrypted-media; picture-in-picture"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen>
+                    </iframe>
+                    <button  onclick="stopVideo()"  commandfor="Cinematic-Erra" command="close">
+                        CLOSE
+                    </button>
+                </dialog>
+
                 <blockquote>
-                    <a href="https://www.youtube.com/watch?v=y1EANe5I4OA">Cinematic: Erra (6:54)</a>
-                    <p>
-                        We see a vision of the Old War, with the Moon under attack by Sentients. At the heart of the Reservoir, a Sentient named <b>Erra</b> confronts the Lotus, claiming to be her brother and accusing the Orokin of manipulating her to betray her own kind. Calling her Natah, he issues an ultimatum: to choose her true family, or the Tenno. The Lotus rejects her old name, and she and the Tenno strike Erra down.
+                <p>
+                        In a vision of the Old War, the Moon is under attack by Sentients. At the heart of the Reservoir, a Sentient named <b>Erra</b> confronts the Lotus, claiming to be her brother and accusing the Orokin of manipulating her to betray her own kind. Calling her Natah, he issues an ultimatum: to choose her true family, or the Tenno. The Lotus rejects her old name, and she and the Tenno strike Erra down.
                     </p>
                     <p>
                         Back in the present day, we find ourselves on a Sentient ship. Erra is alive, and has Ballas on a leash while discussing war preparations with the Lotus, now Natah. Natah is seemingly confused, believing it to still be the Old War. Ballas confirms that the Orokin are gone, and that only the Tenno remain a threat. With that, Erra instructs her to call the other Sentients home.
@@ -326,10 +420,26 @@
 
             <section id="The Maker">
                 <h2>The Maker</h2>
+
+                <button command="show-modal" commandfor="Cinematic-TheMaker">
+                    VIEW CINEMATIC
+                </button>
+                <dialog id="Cinematic-TheMaker">
+                    <iframe
+                        loading="lazy"
+                        src="https://www.youtube.com/embed/hisjU-nBnrg"
+                        title="The Maker"
+                        frameborder="0"
+                        allow="encrypted-media; picture-in-picture"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen>
+                    </iframe>
+                    <button onclick="stopVideo()" command="close" commandfor="Cinematic-TheMaker">
+                        CLOSE
+                    </button>
+                </dialog>
+
                 <blockquote>
-                    <p>
-                        <a href="https://www.youtube.com/watch?v=N0c2OT8rqUQ">Cinematic: The Maker (2:47)</a>
-                    </p>
                     <p>
                         Inside the Sentient ship, Natah asks Erra about their mother. He tells her that she is dead, urging her to finish the war she started. Natah recalls the moment where she struck down Erra in the Reservoir, believing that she had killed him. Erra insists that her memory is wrong, and that she will need time to heal from what the <q>Makers</q> did to her. Natah points to Ballas and asks if he is one of the Makers. Erra suddenly grabs Natah and shoves her against the pedestal behind him, where she is paralyzed in a field of energy. Erra tells her to finish the war, dropping Ballas's leash.
                     </p>
